@@ -4,6 +4,7 @@ import { cartReducer, productReducer } from "./Reducers";
 import "./context.css";
 
 const Cart = createContext();
+
 faker.seed(99);
 
 const Context = ({ children }) => {
