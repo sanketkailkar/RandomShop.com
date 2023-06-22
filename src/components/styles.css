@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* header styles */
+#navbar {
+  position: sticky;
+  top: 0;
+  background-color: #272e51;
+  z-index: 99;
+}
+
+#brand-name {
+  color: white;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+#brand-name>img{
+  width: 250px;
+
+}
+
+.header {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.cartitem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+  margin-bottom: 20px;
+}
+
+.cartItemImg {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.cartItemDetail {
+  display: flex;
+  flex: 1;
+  padding: 0 20px;
+  flex-direction: column;
+}
+
+.dropdown-menu {
+  height: auto;
+}
+
+#gotocart-btn {
+  width: 95%;
+  margin: 0 10px;
+}
+
+/* Home Page */
+
+.home {
+  display: flex;
+}
+
+.filters {
+  background-color: #00539C;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin: 10px;
+  height: 86vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 90px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.filters>span {
+  padding-bottom: 20px;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.productContainer {
+  display: flex;
+  width: 78%;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.products {
+  width: 30%;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.summary {
+  width: 30%;
+}
+
+#proceed-btn {
+  background-color: white;
+  color: black;
+  font-size: 1.2em;
+}
+
+#proceed-btn:hover {
+  border: 1px solid white;
+}
+
+#clear-btn {
+  background-color: white;
+  color: black;
+  font-size: 1.2em;
+}
+
+#clear-btn:hover {
+  border: 1px solid white;
+}
+
+#card-body {
+  padding: 0.75rem;
+}
+
+#inline-1 {
+  padding: 50px;
+}
+
+/* Media Queries */
+@media (max-width: 771px) {
+  .filters {
+    width: 40%;
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .filters>span {
+    font-size: 10px;
+  }
+
+  .title {
+    font-size: 18px !important;
+  }
+
+  .productContainer {
+    width: 58%;
+    padding: 0;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .search {
+    display: none !important;
+  }
+
+  .products {
+    width: 100%;
+  }
+}
